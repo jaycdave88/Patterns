@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		360AF7B11B3DE84100E4CA7F /* test_pattern.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 360AF7B01B3DE84100E4CA7F /* test_pattern.jpg */; };
+		360AF7B31B3DEB8300E4CA7F /* PatternDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360AF7B21B3DEB8300E4CA7F /* PatternDetailedViewController.swift */; };
 		36382BB01B3B515C00C6337E /* Pattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36382BAF1B3B515C00C6337E /* Pattern.swift */; };
 		363AC5E11B3B39C100306725 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363AC5E01B3B39C100306725 /* AppDelegate.swift */; };
 		363AC5E41B3B39C100306725 /* Patterns.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 363AC5E21B3B39C100306725 /* Patterns.xcdatamodeld */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		360AF7B01B3DE84100E4CA7F /* test_pattern.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test_pattern.jpg; sourceTree = "<group>"; };
+		360AF7B21B3DEB8300E4CA7F /* PatternDetailedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternDetailedViewController.swift; sourceTree = "<group>"; };
 		36382BAF1B3B515C00C6337E /* Pattern.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Pattern.swift; path = ../Pattern.swift; sourceTree = "<group>"; };
 		363AC5DB1B3B39C100306725 /* Patterns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Patterns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		363AC5DF1B3B39C100306725 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				363AC5EC1B3B39C100306725 /* LaunchScreen.xib */,
 				363AC5E21B3B39C100306725 /* Patterns.xcdatamodeld */,
 				363AC5DE1B3B39C100306725 /* Supporting Files */,
+				360AF7B21B3DEB8300E4CA7F /* PatternDetailedViewController.swift */,
 			);
 			path = Patterns;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				363AC5E61B3B39C100306725 /* ViewController.swift in Sources */,
+				360AF7B31B3DEB8300E4CA7F /* PatternDetailedViewController.swift in Sources */,
 				363AC5E41B3B39C100306725 /* Patterns.xcdatamodeld in Sources */,
 				36382BB01B3B515C00C6337E /* Pattern.swift in Sources */,
 				363AC5E11B3B39C100306725 /* AppDelegate.swift in Sources */,

@@ -62,5 +62,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
     }
 
+
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        // function that will all you to click on the row from tableView and go to detailed view
+        self.performSegueWithIdentifier("patternDetailedSegue", sender: self) // segue logic for click
+    }
+
 }
 
