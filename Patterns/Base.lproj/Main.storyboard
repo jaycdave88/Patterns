@@ -119,6 +119,10 @@
                             <constraint firstAttribute="centerX" secondItem="Rva-81-vcM" secondAttribute="centerX" id="i15-ei-zo2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backImageView" destination="Rva-81-vcM" id="g4j-cC-XU3"/>
+                        <outlet property="frontImageView" destination="WwW-aa-PPV" id="ugw-Ni-Zgl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LCE-vc-L00" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

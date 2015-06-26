@@ -14,6 +14,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var tableView: UITableView! // adding the tableView to the page
 
     var patterns : [Pattern] = [] //created a property called patterns, which is an array of Patterns object
+
+    var selectedPattern : Pattern? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +44,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
             pattern.name = "Jay's test"
             pattern.frontImage = UIImageJPEGRepresentation(UIImage(named: "test_pattern.jpg"), 1) // converting jpeg to ns obect
+            pattern.backImage = UIImageJPEGRepresentation(UIImage(named: "back.jpg"), 1)
             context.save(nil)
         
     }
@@ -65,7 +68,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         // function that will all you to click on the row from tableView and go to detailed view
-        self.performSegueWithIdentifier("patternDetailedSegue", sender: self) // segue logic for click
+        self.selectedPattern = self.patterns[indexPath.row]
+        self.performSegueWithIdentifier("patternDetailedSegue", sender: self)// segue logic for click
+
+    }
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var detailViewControler = segue.destinationViewController as!PatternDetailedViewController
+        detailViewControler.pattern = self.selectedPattern
     }
 
 }

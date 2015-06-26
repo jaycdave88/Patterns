@@ -10,26 +10,19 @@ import UIKit
 
 class PatternDetailedViewController: UIViewController {
 
+    var pattern : Pattern? = nil // making a property of type Pattern and set it first to equal nil 
+
+    @IBOutlet weak var frontImageView: UIImageView! // attaching storyboard item to code
+    @IBOutlet weak var backImageView: UIImageView! // attaching storyboard item to code
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+
+        self.navigationItem.title = self.pattern!.name // setting the name of from the UItable view to the name of detailedVIewControler
+        self.frontImageView.image = UIImage(data: pattern!.frontImage) // setting the correct image
+        self.backImageView.image = UIImage(data: pattern!.backImage)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
