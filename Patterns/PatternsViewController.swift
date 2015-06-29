@@ -73,6 +73,25 @@ class PatternsViewController: UIViewController, UITableViewDataSource, UITableVi
 
     }
 
+    // Delete row
+    func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true;
+    }
+
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath ) {
+        var context = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext!
+
+
+        if (editingStyle == UITableViewCellEditingStyle.Delete){
+
+            context.deleteObject(patterns[indexPath.row] as NSManagedObject) // deletes object
+            patterns.removeAtIndex(indexPath.row) // removes data from index
+            context.save(nil) // saves the data
+
+            self.tableView.reloadData()// updated table view
+        }
+    } // end delete row
+
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         var detailViewControler = segue.destinationViewController as!PatternDetailedViewController
         detailViewControler.pattern = self.selectedPattern
