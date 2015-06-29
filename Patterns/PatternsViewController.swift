@@ -24,17 +24,22 @@ class PatternsViewController: UIViewController, UITableViewDataSource, UITableVi
         self.tableView.dataSource = self // required to set up the tableview
         self.tableView.delegate = self // required to set up the tableview
         
-        createObject() // calling the function
+//        createObject() // calling the function
+    }
+
+    override func viewDidAppear(animated: Bool) {
 
         var context = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext!
 
         var request = NSFetchRequest(entityName: "Pattern") // is the way to grab ALL the data from core data that has the name of "Pattern"
 
-        var results = context.executeFetchRequest(request, error: nil) // executes the request as an array 
+        var results = context.executeFetchRequest(request, error: nil) // executes the request as an array
 
         if results != nil{ // checking if the results array is not empty
             self.patterns = results! as! [Pattern]
         }
+        
+        tableView.reloadData()
     }
     
     func createObject(){
@@ -93,8 +98,11 @@ class PatternsViewController: UIViewController, UITableViewDataSource, UITableVi
     } // end delete row
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        var detailViewControler = segue.destinationViewController as!PatternDetailedViewController
-        detailViewControler.pattern = self.selectedPattern
+        if segue.identifier == "patternDetailedSegue"{
+            
+            var detailViewControler = segue.destinationViewController as!PatternDetailedViewController
+            detailViewControler.pattern = self.selectedPattern
+        } // end if
     }
 
 }
