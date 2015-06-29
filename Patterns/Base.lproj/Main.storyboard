@@ -23,7 +23,7 @@
         <!--Patterns-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Patterns" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="PatternsViewController" customModule="Patterns" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -75,27 +75,27 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Front" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rR5-vj-3eV">
                                 <rect key="frame" x="20" y="104" width="560" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test_pattern.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="WwW-aa-PPV">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test_pattern.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="WwW-aa-PPV">
                                 <rect key="frame" x="180" y="144" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="eKA-Cf-d7x"/>
                                     <constraint firstAttribute="width" constant="240" id="n80-mp-Zie"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Back" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I1U-iv-ayG">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Back" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I1U-iv-ayG">
                                 <rect key="frame" x="10" y="331" width="580" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="7wZ-76-2CQ"/>
                                     <constraint firstAttribute="width" constant="41" id="8hV-ba-Zlf"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rva-81-vcM">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rva-81-vcM">
                                 <rect key="frame" x="180" y="372" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="7EH-G0-SJv"/>
@@ -122,14 +122,60 @@
                     <connections>
                         <outlet property="backImageView" destination="Rva-81-vcM" id="g4j-cC-XU3"/>
                         <outlet property="frontImageView" destination="WwW-aa-PPV" id="ugw-Ni-Zgl"/>
+                        <segue destination="cSA-FT-NrL" kind="show" identifier="zoomSegue" id="Of4-uE-Gbe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LCE-vc-L00" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="535" y="357"/>
         </scene>
+        <!--Zoom View Controller-->
+        <scene sceneID="DJb-Yd-A18">
+            <objects>
+                <viewController id="cSA-FT-NrL" customClass="ZoomViewController" customModule="Patterns" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QV8-ns-56p"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZCf-6S-N27"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nVM-NO-dPM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j83-qt-xCE">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="back.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Zke-Py-1XC">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Zke-Py-1XC" secondAttribute="trailing" id="4cI-zE-jhP"/>
+                                    <constraint firstItem="Zke-Py-1XC" firstAttribute="leading" secondItem="j83-qt-xCE" secondAttribute="leading" id="eMT-XI-1JN"/>
+                                    <constraint firstAttribute="bottom" secondItem="Zke-Py-1XC" secondAttribute="bottom" id="nb1-3H-pS6"/>
+                                    <constraint firstItem="Zke-Py-1XC" firstAttribute="top" secondItem="j83-qt-xCE" secondAttribute="top" id="vYB-hp-JZH"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="j83-qt-xCE" firstAttribute="top" secondItem="nVM-NO-dPM" secondAttribute="top" id="haU-eT-1yB"/>
+                            <constraint firstItem="ZCf-6S-N27" firstAttribute="top" secondItem="j83-qt-xCE" secondAttribute="bottom" id="xTU-kZ-u0w"/>
+                            <constraint firstAttribute="trailing" secondItem="j83-qt-xCE" secondAttribute="trailing" id="xkl-fk-lTJ"/>
+                            <constraint firstItem="j83-qt-xCE" firstAttribute="leading" secondItem="nVM-NO-dPM" secondAttribute="leading" id="yAC-jO-uJy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Zke-Py-1XC" id="lFo-hB-XlM"/>
+                        <outlet property="scrollView" destination="j83-qt-xCE" id="9vo-kz-XDC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iDs-Q2-ouA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1253" y="357"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="back.jpg" width="640" height="640"/>
         <image name="test_pattern.jpg" width="4167" height="4167"/>
     </resources>
 </document>
