@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class PatternsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView! // adding the tableView to the page
 

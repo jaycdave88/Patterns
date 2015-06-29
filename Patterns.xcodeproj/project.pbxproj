@@ -13,11 +13,12 @@
 		36382BB01B3B515C00C6337E /* Pattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36382BAF1B3B515C00C6337E /* Pattern.swift */; };
 		363AC5E11B3B39C100306725 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363AC5E01B3B39C100306725 /* AppDelegate.swift */; };
 		363AC5E41B3B39C100306725 /* Patterns.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 363AC5E21B3B39C100306725 /* Patterns.xcdatamodeld */; };
-		363AC5E61B3B39C100306725 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363AC5E51B3B39C100306725 /* ViewController.swift */; };
+		363AC5E61B3B39C100306725 /* PatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363AC5E51B3B39C100306725 /* PatternsViewController.swift */; };
 		363AC5E91B3B39C100306725 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 363AC5E71B3B39C100306725 /* Main.storyboard */; };
 		363AC5EB1B3B39C100306725 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 363AC5EA1B3B39C100306725 /* Images.xcassets */; };
 		363AC5EE1B3B39C100306725 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 363AC5EC1B3B39C100306725 /* LaunchScreen.xib */; };
 		363AC5FA1B3B39C100306725 /* PatternsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363AC5F91B3B39C100306725 /* PatternsTests.swift */; };
+		36481CDB1B41DDE10003155F /* ZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36481CDA1B41DDE10003155F /* ZoomViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,13 +40,14 @@
 		363AC5DF1B3B39C100306725 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		363AC5E01B3B39C100306725 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		363AC5E31B3B39C100306725 /* Patterns.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Patterns.xcdatamodel; sourceTree = "<group>"; };
-		363AC5E51B3B39C100306725 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		363AC5E51B3B39C100306725 /* PatternsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternsViewController.swift; sourceTree = "<group>"; };
 		363AC5E81B3B39C100306725 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		363AC5EA1B3B39C100306725 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		363AC5ED1B3B39C100306725 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		363AC5F31B3B39C100306725 /* PatternsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PatternsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		363AC5F81B3B39C100306725 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		363AC5F91B3B39C100306725 /* PatternsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternsTests.swift; sourceTree = "<group>"; };
+		36481CDA1B41DDE10003155F /* ZoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +92,8 @@
 				360AF7B41B3DF90100E4CA7F /* back.jpg */,
 				360AF7B01B3DE84100E4CA7F /* test_pattern.jpg */,
 				363AC5E01B3B39C100306725 /* AppDelegate.swift */,
-				363AC5E51B3B39C100306725 /* ViewController.swift */,
+				363AC5E51B3B39C100306725 /* PatternsViewController.swift */,
+				36481CDA1B41DDE10003155F /* ZoomViewController.swift */,
 				360AF7B21B3DEB8300E4CA7F /* PatternDetailedViewController.swift */,
 				36382BAF1B3B515C00C6337E /* Pattern.swift */,
 				363AC5E71B3B39C100306725 /* Main.storyboard */,
@@ -229,7 +232,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				363AC5E61B3B39C100306725 /* ViewController.swift in Sources */,
+				363AC5E61B3B39C100306725 /* PatternsViewController.swift in Sources */,
+				36481CDB1B41DDE10003155F /* ZoomViewController.swift in Sources */,
 				360AF7B31B3DEB8300E4CA7F /* PatternDetailedViewController.swift in Sources */,
 				363AC5E41B3B39C100306725 /* Patterns.xcdatamodeld in Sources */,
 				36382BB01B3B515C00C6337E /* Pattern.swift in Sources */,
