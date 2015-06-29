@@ -19,6 +19,7 @@
 		363AC5EE1B3B39C100306725 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 363AC5EC1B3B39C100306725 /* LaunchScreen.xib */; };
 		363AC5FA1B3B39C100306725 /* PatternsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363AC5F91B3B39C100306725 /* PatternsTests.swift */; };
 		36481CDB1B41DDE10003155F /* ZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36481CDA1B41DDE10003155F /* ZoomViewController.swift */; };
+		36481CDD1B41F1D70003155F /* CreatePatternViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36481CDC1B41F1D70003155F /* CreatePatternViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		363AC5F81B3B39C100306725 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		363AC5F91B3B39C100306725 /* PatternsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternsTests.swift; sourceTree = "<group>"; };
 		36481CDA1B41DDE10003155F /* ZoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomViewController.swift; sourceTree = "<group>"; };
+		36481CDC1B41F1D70003155F /* CreatePatternViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePatternViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				363AC5E51B3B39C100306725 /* PatternsViewController.swift */,
 				36481CDA1B41DDE10003155F /* ZoomViewController.swift */,
 				360AF7B21B3DEB8300E4CA7F /* PatternDetailedViewController.swift */,
+				36481CDC1B41F1D70003155F /* CreatePatternViewController.swift */,
 				36382BAF1B3B515C00C6337E /* Pattern.swift */,
 				363AC5E71B3B39C100306725 /* Main.storyboard */,
 				363AC5EA1B3B39C100306725 /* Images.xcassets */,
@@ -234,6 +237,7 @@
 			files = (
 				363AC5E61B3B39C100306725 /* PatternsViewController.swift in Sources */,
 				36481CDB1B41DDE10003155F /* ZoomViewController.swift in Sources */,
+				36481CDD1B41F1D70003155F /* CreatePatternViewController.swift in Sources */,
 				360AF7B31B3DEB8300E4CA7F /* PatternDetailedViewController.swift in Sources */,
 				363AC5E41B3B39C100306725 /* Patterns.xcdatamodeld in Sources */,
 				36382BB01B3B515C00C6337E /* Pattern.swift in Sources */,
