@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		360AF7B11B3DE84100E4CA7F /* test_pattern.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 360AF7B01B3DE84100E4CA7F /* test_pattern.jpg */; };
 		360AF7B31B3DEB8300E4CA7F /* PatternDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360AF7B21B3DEB8300E4CA7F /* PatternDetailedViewController.swift */; };
-		360AF7B51B3DF90100E4CA7F /* back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 360AF7B41B3DF90100E4CA7F /* back.jpg */; };
 		36382BB01B3B515C00C6337E /* Pattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36382BAF1B3B515C00C6337E /* Pattern.swift */; };
 		363AC5E11B3B39C100306725 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363AC5E01B3B39C100306725 /* AppDelegate.swift */; };
 		363AC5E41B3B39C100306725 /* Patterns.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 363AC5E21B3B39C100306725 /* Patterns.xcdatamodeld */; };
@@ -33,9 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		360AF7B01B3DE84100E4CA7F /* test_pattern.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test_pattern.jpg; sourceTree = "<group>"; };
 		360AF7B21B3DEB8300E4CA7F /* PatternDetailedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternDetailedViewController.swift; sourceTree = "<group>"; };
-		360AF7B41B3DF90100E4CA7F /* back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = back.jpg; sourceTree = "<group>"; };
 		36382BAF1B3B515C00C6337E /* Pattern.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Pattern.swift; path = ../Pattern.swift; sourceTree = "<group>"; };
 		363AC5DB1B3B39C100306725 /* Patterns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Patterns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		363AC5DF1B3B39C100306725 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -91,8 +87,6 @@
 		363AC5DD1B3B39C100306725 /* Patterns */ = {
 			isa = PBXGroup;
 			children = (
-				360AF7B41B3DF90100E4CA7F /* back.jpg */,
-				360AF7B01B3DE84100E4CA7F /* test_pattern.jpg */,
 				363AC5E01B3B39C100306725 /* AppDelegate.swift */,
 				363AC5E51B3B39C100306725 /* PatternsViewController.swift */,
 				36481CDA1B41DDE10003155F /* ZoomViewController.swift */,
@@ -213,8 +207,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				360AF7B11B3DE84100E4CA7F /* test_pattern.jpg in Resources */,
-				360AF7B51B3DF90100E4CA7F /* back.jpg in Resources */,
 				363AC5E91B3B39C100306725 /* Main.storyboard in Resources */,
 				363AC5EE1B3B39C100306725 /* LaunchScreen.xib in Resources */,
 				363AC5EB1B3B39C100306725 /* Images.xcassets in Resources */,
@@ -370,7 +362,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Patterns/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Patterns;
 			};
 			name = Debug;
 		};
@@ -380,7 +372,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Patterns/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Patterns;
 			};
 			name = Release;
 		};
@@ -398,7 +390,7 @@
 				);
 				INFOPLIST_FILE = PatternsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PatternsTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Patterns.app/Patterns";
 			};
 			name = Debug;
@@ -413,7 +405,7 @@
 				);
 				INFOPLIST_FILE = PatternsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PatternsTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Patterns.app/Patterns";
 			};
 			name = Release;
