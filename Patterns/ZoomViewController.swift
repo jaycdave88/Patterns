@@ -20,7 +20,7 @@ class ZoomViewController: UIViewController, UIScrollViewDelegate {
         super.viewDidLoad()
         // Do you...
 
-        self.scrollView.minimumZoomScale = 1 // never for scrollview to be less then 1
+        self.scrollView.minimumZoomScale = -1// never for scrollview to be less then 1
         self.scrollView.maximumZoomScale = 50 // at the most zoom
         self.scrollView.delegate = self // setting the delagete for scrollview
         self.imageView.image = self.image! // 

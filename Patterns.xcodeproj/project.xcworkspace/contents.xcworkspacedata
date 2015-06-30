@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../Patterns/Pattern.swift">
-   </FileRef>
-   <FileRef
-      location = "self:Patterns.xcodeproj">
+      location = "self:/Users/devmode/Desktop/Patterns/Patterns.xcodeproj">
    </FileRef>
 </Workspace>

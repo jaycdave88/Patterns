@@ -46,7 +46,7 @@ class PatternDetailedViewController: UIViewController {
     }
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        var zoomViewController = segue.destinationViewController as ZoomViewController
+        var zoomViewController = segue.destinationViewController as! ZoomViewController
         zoomViewController.image = self.tappedImage!
     }
 }
